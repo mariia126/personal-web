@@ -37,9 +37,9 @@ class ThemeManager {
     
     // Update icon
     if (theme === 'dark') {
-      this.themeIcon.textContent = '◐';
+      this.themeIcon.textContent = '🌙';
     } else {
-      this.themeIcon.textContent = '◑';
+      this.themeIcon.textContent = '☀️';
     }
     
     // Add smooth transition effect
