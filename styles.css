@@ -7,11 +7,11 @@
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
   --text-muted: #666666;
-  --accent-primary: #ff6b9d;
-  --accent-secondary: #c44569;
+  --accent-primary: #9d4edd;
+  --accent-secondary: #c77dff;
   --border-color: #333333;
   --shadow-color: rgba(0, 0, 0, 0.3);
-  --gradient-primary: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  --gradient-primary: linear-gradient(135deg, #9d4edd 0%, #c77dff 50%, #e0aaff 100%);
   --gradient-secondary: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
 }
 
@@ -23,11 +23,11 @@
   --text-primary: #212529;
   --text-secondary: #495057;
   --text-muted: #6c757d;
-  --accent-primary: #ff6b9d;
-  --accent-secondary: #c44569;
+  --accent-primary: #9d4edd;
+  --accent-secondary: #c77dff;
   --border-color: #dee2e6;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --gradient-primary: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  --gradient-primary: linear-gradient(135deg, #9d4edd 0%, #c77dff 50%, #e0aaff 100%);
   --gradient-secondary: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
@@ -280,7 +280,7 @@ body {
 
 .skill-tag:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
 }
 
 /* Languages Section */
@@ -362,7 +362,7 @@ body {
 
 .certification-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
 }
 
 /* Projects Section */
@@ -412,7 +412,7 @@ body {
 
 .project-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
 }
 
 /* Blog Section */
@@ -462,7 +462,7 @@ body {
 
 .blog-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
 }
 
 /* Links Section */
