@@ -105,34 +105,6 @@ body {
   align-items: center;
 }
 
-/* Language Toggle */
-.language-toggle {
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-  color: var(--text-primary);
-}
-
-.language-toggle:hover {
-  background: var(--gradient-primary);
-  color: white;
-  transform: scale(1.05);
-}
-
-.language-icon {
-  font-size: 1rem;
-}
-
-.language-text {
-  font-weight: 500;
-}
 
 /* Theme Toggle */
 .theme-toggle {

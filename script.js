@@ -1,62 +1,3 @@
-// Language Management
-class LanguageManager {
-  constructor() {
-    this.languageToggle = document.getElementById('languageToggle');
-    this.languageIcon = document.querySelector('.language-icon');
-    this.languageText = document.querySelector('.language-text');
-    this.currentLanguage = localStorage.getItem('language') || 'en';
-    
-    this.init();
-  }
-
-  init() {
-    // Set initial language
-    this.setLanguage(this.currentLanguage);
-    
-    // Add event listener for language toggle
-    this.languageToggle.addEventListener('click', () => {
-      this.toggleLanguage();
-    });
-
-    // Add keyboard support
-    this.languageToggle.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.toggleLanguage();
-      }
-    });
-  }
-
-  toggleLanguage() {
-    this.currentLanguage = this.currentLanguage === 'en' ? 'es' : 'en';
-    this.setLanguage(this.currentLanguage);
-    this.saveLanguage();
-  }
-
-  setLanguage(language) {
-    // Update document language
-    document.documentElement.lang = language;
-    
-    // Update toggle button
-    if (language === 'en') {
-      this.languageIcon.textContent = '🇪🇸';
-      this.languageText.textContent = 'ES';
-    } else {
-      this.languageIcon.textContent = '🇺🇸';
-      this.languageText.textContent = 'EN';
-    }
-    
-    // Update all elements with data attributes
-    document.querySelectorAll('[data-es][data-en]').forEach(element => {
-      element.textContent = element.getAttribute(`data-${language}`);
-    });
-  }
-
-  saveLanguage() {
-    localStorage.setItem('language', this.currentLanguage);
-  }
-}
-
 // Theme Management
 class ThemeManager {
   constructor() {
@@ -298,7 +239,6 @@ class SkillTagsEffect {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-  new LanguageManager();
   new ThemeManager();
   new SmoothScroll();
   new AnimationObserver();
