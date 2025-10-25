@@ -11,15 +11,21 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header with theme toggle -->
+        <!-- Header with theme toggle and language selector -->
         <header class="header">
             <div class="header-content">
-                <h1 class="name">María García</h1>
-                <p class="title">Junior Platform Engineer</p>
-                <p class="location">Gijón, Asturias</p>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <span class="theme-icon">🌙</span>
-                </button>
+                <div class="header-controls">
+                    <button class="language-toggle" id="languageToggle" aria-label="Toggle language">
+                        <span class="language-icon">🇪🇸</span>
+                        <span class="language-text">ES</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+                <h1 class="name" data-es="María García García" data-en="María García García">María García García</h1>
+                <p class="title" data-es="Ingeniera de Plataforma Junior" data-en="Junior Platform Engineer">Junior Platform Engineer</p>
+                <p class="location" data-es="Gijón, Asturias" data-en="Gijón, Asturias">Gijón, Asturias</p>
             </div>
         </header>
 
@@ -27,8 +33,8 @@
         <main class="main-content">
             <!-- About Section -->
             <section class="section" id="about">
-                <h2 class="section-title">About</h2>
-                <p class="about-text">
+                <h2 class="section-title" data-es="Sobre mí" data-en="About">About</h2>
+                <p class="about-text" data-es="Ingeniera de Plataforma Junior apasionada por construir infraestructura escalable y herramientas de desarrollo. Actualmente trabajando en Resizes, enfocándome en tecnologías cloud y automatización." data-en="Junior Platform Engineer passionate about building scalable infrastructure and developer tools. Currently working at Resizes, focusing on cloud technologies and automation.">
                     Junior Platform Engineer passionate about building scalable infrastructure and developer tools. 
                     Currently working at Resizes, focusing on cloud technologies and automation.
                 </p>
@@ -36,7 +42,7 @@
 
             <!-- Experience Section -->
             <section class="section" id="experience">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title" data-es="Experiencia" data-en="Experience">Experience</h2>
                 <div class="experience-item">
                     <div class="experience-header">
                         <h3 class="job-title">Junior Platform Engineer</h3>
@@ -75,7 +81,7 @@
 
             <!-- Education Section -->
             <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title" data-es="Educación" data-en="Education">Education</h2>
                 <div class="education-item">
                     <h3 class="degree">Grado en Técnico Superior de Desarrollo de Aplicaciones Web</h3>
                     <p class="institution">2021-2023</p>
@@ -92,7 +98,7 @@
 
             <!-- Skills Section -->
             <section class="section" id="skills">
-                <h2 class="section-title">Skills & Tools</h2>
+                <h2 class="section-title" data-es="Habilidades y Herramientas" data-en="Skills & Tools">Skills & Tools</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3 class="skill-category-title">Programming Languages</h3>
@@ -173,22 +179,22 @@
 
             <!-- Languages Section -->
             <section class="section" id="languages">
-                <h2 class="section-title">Languages</h2>
+                <h2 class="section-title" data-es="Idiomas" data-en="Languages">Languages</h2>
                 <div class="languages-list">
                     <div class="language-item">
-                        <span class="language-name">Spanish</span>
-                        <span class="language-level">Native</span>
+                        <span class="language-name" data-es="Español" data-en="Spanish">Spanish</span>
+                        <span class="language-level" data-es="Nativo" data-en="Native">Native</span>
                     </div>
                     <div class="language-item">
-                        <span class="language-name">English</span>
-                        <span class="language-level">B2</span>
+                        <span class="language-name" data-es="Inglés" data-en="English">English</span>
+                        <span class="language-level" data-es="B2" data-en="B2">B2</span>
                     </div>
                 </div>
             </section>
 
             <!-- Certifications Section -->
             <section class="section" id="certifications">
-                <h2 class="section-title">Certifications</h2>
+                <h2 class="section-title" data-es="Certificaciones" data-en="Certifications">Certifications</h2>
                 <div class="certifications-list">
                     <div class="certification-item">
                         <h3 class="certification-name">AWS Partner: Sales Accreditation</h3>
@@ -207,7 +213,7 @@
 
             <!-- Projects Section -->
             <section class="section" id="projects">
-                <h2 class="section-title">Side Projects</h2>
+                <h2 class="section-title" data-es="Proyectos Personales" data-en="Side Projects">Side Projects</h2>
                 <div class="projects-grid">
                     <div class="project-item">
                         <h3 class="project-title">Inker</h3>
@@ -219,7 +225,7 @@
 
             <!-- Blog Posts Section -->
             <section class="section" id="blog">
-                <h2 class="section-title">Latest Blog Posts</h2>
+                <h2 class="section-title" data-es="Últimos Posts del Blog" data-en="Latest Blog Posts">Latest Blog Posts</h2>
                 <div class="blog-posts">
                     <div class="blog-post">
                         <h3 class="blog-title">SFTP server in Kubernetes with SFTPGo</h3>
@@ -236,23 +242,23 @@
 
             <!-- Links Section -->
             <section class="section" id="links">
-                <h2 class="section-title">Links & Contact</h2>
+                <h2 class="section-title" data-es="Enlaces y Contacto" data-en="Links & Contact">Links & Contact</h2>
                 <div class="links-grid">
                     <a href="mailto:maria@resiz.es" class="link-item">
                         <span class="link-icon">✉️</span>
-                        <span class="link-text">Email</span>
+                        <span class="link-text" data-es="Email" data-en="Email">Email</span>
                     </a>
                     <a href="https://www.linkedin.com/in/mariia126/" class="link-item">
                         <span class="link-icon">💼</span>
-                        <span class="link-text">LinkedIn</span>
+                        <span class="link-text" data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
                     </a>
                     <a href="https://www.instagram.com/shemihaza126/" class="link-item">
                         <span class="link-icon">📷</span>
-                        <span class="link-text">Instagram</span>
+                        <span class="link-text" data-es="Instagram" data-en="Instagram">Instagram</span>
                     </a>
                     <a href="https://steamcommunity.com/profiles/76561199243503767/" class="link-item">
                         <span class="link-icon">🎮</span>
-                        <span class="link-text">Steam</span>
+                        <span class="link-text" data-es="Steam" data-en="Steam">Steam</span>
                     </a>
                 </div>
             </section>
